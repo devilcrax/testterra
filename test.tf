@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "circleci" {
-  name = var.user
+  name = circleci-user
   path = "/system/"
 }
 
